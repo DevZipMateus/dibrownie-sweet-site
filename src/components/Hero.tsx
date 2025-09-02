@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button';
 import { Star, Award, MapPin } from 'lucide-react';
-import heroImage from '@/assets/hero-brownies.jpg';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -18,7 +17,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src={heroImage} 
+          src="/lovable-uploads/2318ba0f-5125-45ae-9b32-aeabf75deb4e.png" 
           alt="Brownies e Alfajores Artesanais Di Brownie"
           className="w-full h-full object-cover"
         />
