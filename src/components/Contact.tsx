@@ -27,8 +27,12 @@ const Contact = () => {
               <div className="space-y-6">
                 <Card className="p-6 border-0 shadow-elegant bg-card/80 backdrop-blur-sm hover:shadow-warm transition-all duration-300">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-secondary" />
+                    <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center flex-shrink-0 p-2">
+                      <img 
+                        src="/lovable-uploads/f49c33c4-a3c0-4957-9df8-2cb478760990.png" 
+                        alt="WhatsApp" 
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                     <div>
                       <h4 className="font-semibold text-primary mb-1">Telefone</h4>
@@ -119,9 +123,14 @@ const Contact = () => {
             <div className="space-y-4">
               <Button 
                 asChild
-                className="w-full bg-gradient-hero hover:opacity-90 text-white shadow-warm border-0 text-lg px-8 py-6"
+                className="w-full bg-gradient-hero hover:opacity-90 text-white shadow-warm border-0 text-lg px-8 py-6 flex items-center gap-3"
               >
-                <a href="https://wa.me/5521985011644" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5521985011644" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3">
+                  <img 
+                    src="/lovable-uploads/f49c33c4-a3c0-4957-9df8-2cb478760990.png" 
+                    alt="WhatsApp" 
+                    className="w-6 h-6 object-contain"
+                  />
                   Fale Conosco no WhatsApp
                 </a>
               </Button>

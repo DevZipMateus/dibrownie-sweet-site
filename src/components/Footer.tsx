@@ -91,8 +91,14 @@ const Footer = () => {
               Contato
             </h3>
             <div className="space-y-4 text-sm">
-              <div className="flex items-start gap-3">
-                <Phone className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                <div className="flex items-start gap-3">
+                  <div className="w-4 h-4 flex items-center justify-center mt-0.5 flex-shrink-0">
+                    <img 
+                      src="/lovable-uploads/f49c33c4-a3c0-4957-9df8-2cb478760990.png" 
+                      alt="WhatsApp" 
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
                 <div>
                   <a 
                     href="https://wa.me/5521985011644" 

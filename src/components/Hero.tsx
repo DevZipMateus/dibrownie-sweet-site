@@ -85,7 +85,12 @@ const Hero = () => {
               className="w-full sm:w-auto bg-white/10 border-white/60 text-white hover:bg-white hover:text-primary backdrop-blur-sm text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 font-semibold"
               asChild
             >
-              <a href="https://wa.me/5521985011644" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5521985011644" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                <img 
+                  src="/lovable-uploads/f49c33c4-a3c0-4957-9df8-2cb478760990.png" 
+                  alt="WhatsApp" 
+                  className="w-5 h-5 object-contain opacity-90"
+                />
                 Fale Conosco
               </a>
             </Button>

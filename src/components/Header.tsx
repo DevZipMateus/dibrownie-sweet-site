@@ -96,9 +96,14 @@ const Header = () => {
               </button>
               <Button 
                 asChild
-                className="bg-gradient-hero hover:opacity-90 text-white shadow-warm border-0"
+                className="bg-gradient-hero hover:opacity-90 text-white shadow-warm border-0 flex items-center gap-2"
               >
-                <a href="https://wa.me/5521985011644" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5521985011644" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <img 
+                    src="/lovable-uploads/f49c33c4-a3c0-4957-9df8-2cb478760990.png" 
+                    alt="WhatsApp" 
+                    className="w-4 h-4 object-contain"
+                  />
                   Fale Conosco
                 </a>
               </Button>
@@ -149,9 +154,14 @@ const Header = () => {
                 <div className="pt-2">
                   <Button 
                     asChild
-                    className="w-full bg-gradient-hero hover:opacity-90 text-white shadow-warm border-0"
+                    className="w-full bg-gradient-hero hover:opacity-90 text-white shadow-warm border-0 flex items-center gap-2"
                   >
-                    <a href="https://wa.me/5521985011644" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/5521985011644" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                      <img 
+                        src="/lovable-uploads/f49c33c4-a3c0-4957-9df8-2cb478760990.png" 
+                        alt="WhatsApp" 
+                        className="w-4 h-4 object-contain"
+                      />
                       Fale Conosco
                     </a>
                   </Button>

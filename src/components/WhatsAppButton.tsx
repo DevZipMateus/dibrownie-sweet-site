@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { MessageCircle, X } from 'lucide-react';
+import { X } from 'lucide-react';
 
 const WhatsAppButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,8 +30,12 @@ const WhatsAppButton = () => {
         <div className="mb-4 bg-white rounded-2xl shadow-elegant border border-border p-3 sm:p-4 w-72 sm:w-80 animate-fade-in max-w-[calc(100vw-2rem)]">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-2 sm:gap-3">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-hero rounded-full flex items-center justify-center">
-                <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-white rounded-full flex items-center justify-center p-1.5 sm:p-2">
+                <img 
+                  src="/lovable-uploads/f49c33c4-a3c0-4957-9df8-2cb478760990.png" 
+                  alt="WhatsApp" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h4 className="font-semibold text-primary text-sm">Di Brownie</h4>
@@ -72,10 +76,14 @@ const WhatsAppButton = () => {
       <div className="relative">
         <button
           onClick={isExpanded ? handleClick : toggleExpanded}
-          className="bg-gradient-hero text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-warm flex items-center justify-center hover:scale-110 transition-all duration-300 group"
+          className="bg-white text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-warm flex items-center justify-center hover:scale-110 transition-all duration-300 group p-2 sm:p-3"
           aria-label="Falar no WhatsApp"
         >
-          <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform" />
+          <img 
+            src="/lovable-uploads/f49c33c4-a3c0-4957-9df8-2cb478760990.png" 
+            alt="WhatsApp" 
+            className="w-full h-full object-contain group-hover:scale-110 transition-transform"
+          />
         </button>
 
         {/* Pulse Animation */}
