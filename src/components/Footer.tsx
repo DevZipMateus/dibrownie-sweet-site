@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       {/* Wave Container */}
-      <div className="wave-container"></div>
+      <div className="wave-container-double"></div>
       
       <footer style={{backgroundColor: '#6B3E26'}} className="text-primary-foreground py-16">{/* Chocolate Dripping Wave Effect */}
 

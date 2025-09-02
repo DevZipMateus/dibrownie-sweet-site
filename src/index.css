@@ -111,28 +111,42 @@ All colors MUST be HSL.
 }
 
 /* Wave Animation */
-.wave-container {
-  height: 80px; 
+.wave-container-double {
+  height: 90px;
   width: 100%;
   overflow: hidden;
   position: relative;
-  margin-bottom: -1px; 
+  margin-bottom: -1px;
 }
 
-.wave-container::before {
+/* Base para as duas ondas */
+.wave-container-double::before,
+.wave-container-double::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 200%;
   height: 100%;
-  
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3e%3cpath class='wave-fill' fill='%236B3E26' d='M0,7.34 C163.87,133.68 322.53,-115.85 500,27.34 C677.47,170.53 836.13,-128.62 1000,7.34 L1000,100 L0,100 Z'%3e%3c/path%3e%3c/svg%3e");
-  
   background-repeat: repeat-x;
   background-size: 50% 100%;
+  animation-name: slide-wave;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
 
-  animation: slide-wave 12s linear infinite;
+/* Onda de trás */
+.wave-container-double::before {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3e%3cpath class='wave-fill' fill='%238a5a44' d='M0,7.34 C163.87,133.68 322.53,-115.85 500,27.34 C677.47,170.53 836.13,-128.62 1000,7.34 L1000,100 L0,100 Z'%3e%3c/path%3e%3c/svg%3e");
+  animation-duration: 15s;
+  opacity: 0.7;
+}
+
+/* Onda da frente */
+.wave-container-double::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3e%3cpath class='wave-fill' fill='%236B3E26' d='M0,7.34 C163.87,133.68 322.53,-115.85 500,27.34 C677.47,170.53 836.13,-128.62 1000,7.34 L1000,100 L0,100 Z'%3e%3c/path%3e%3c/svg%3e");
+  animation-duration: 10s;
+  transform: translateY(10px);
 }
 
 @keyframes slide-wave {
