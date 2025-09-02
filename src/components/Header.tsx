@@ -29,40 +29,42 @@ const Header = () => {
   return (
     <>
       {/* Top Info Bar */}
-      <div className="fixed top-0 w-full z-50 bg-primary text-primary-foreground py-2 px-4 text-sm hidden md:block">
+      <div className="fixed top-0 w-full z-50 bg-primary text-primary-foreground py-2 px-4 text-xs sm:text-sm hidden lg:block">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4 xl:gap-6">
             <div className="flex items-center gap-2">
-              <Phone className="w-4 h-4" />
-              <span>(21) 98501-1644</span>
+              <Phone className="w-3 h-3 xl:w-4 xl:h-4" />
+              <span className="hidden xl:inline">(21) 98501-1644</span>
+              <span className="xl:hidden">98501-1644</span>
             </div>
             <div className="flex items-center gap-2">
-              <Mail className="w-4 h-4" />
-              <span>contato@dibrownie.com.br</span>
+              <Mail className="w-3 h-3 xl:w-4 xl:h-4" />
+              <span className="hidden xl:inline">contato@dibrownie.com.br</span>
+              <span className="xl:hidden">contato@dibrownie.com.br</span>
             </div>
             <div className="flex items-center gap-2">
-              <MapPin className="w-4 h-4" />
+              <MapPin className="w-3 h-3 xl:w-4 xl:h-4" />
               <span>Icaraí - Niterói - RJ</span>
             </div>
           </div>
-          <div className="text-sm">
+          <div className="text-xs xl:text-sm">
             Seg-Sex: 08:00 às 18:00
           </div>
         </div>
       </div>
 
       {/* Main Navigation */}
-      <header className={`fixed top-0 md:top-8 w-full z-40 transition-all duration-300 ${
+      <header className={`fixed top-0 lg:top-8 w-full z-40 transition-all duration-300 ${
         isScrolled ? 'bg-background/95 backdrop-blur-md shadow-elegant' : 'bg-background/80 backdrop-blur-sm'
       }`}>
-        <nav className="container mx-auto px-4 py-4">
+        <nav className="container mx-auto px-4 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <img 
                 src="/lovable-uploads/8c2ab650-6d92-4dd3-819f-8255f85c4677.png" 
                 alt="Di Brownie - Brownies e Alfajores Artesanais" 
-                className="h-12 w-auto"
+                className="h-10 sm:h-12 w-auto"
               />
             </div>
 
