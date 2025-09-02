@@ -4,8 +4,56 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary text-primary-foreground py-16">
-      <div className="container mx-auto px-4">
+    <footer className="relative bg-primary text-primary-foreground py-16 overflow-hidden">
+      {/* Chocolate Dripping Wave Effect */}
+      <div className="absolute top-0 left-0 w-full h-16 overflow-hidden">
+        {/* Wave Layer 1 */}
+        <div className="absolute top-0 left-0 w-[200%] h-full animate-wave-flow">
+          <svg
+            viewBox="0 0 1200 120"
+            className="w-full h-full"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0 C150,60 300,0 450,40 C600,80 750,20 900,50 C1050,80 1200,30 1200,30 L1200,0 Z"
+              fill="hsl(var(--primary))"
+              opacity="0.9"
+            />
+          </svg>
+        </div>
+        
+        {/* Wave Layer 2 */}
+        <div className="absolute top-0 left-0 w-[200%] h-full animate-wave-flow-slow">
+          <svg
+            viewBox="0 0 1200 120"
+            className="w-full h-full"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,10 C200,70 400,10 600,50 C800,90 1000,40 1200,60 L1200,0 Z"
+              fill="hsl(var(--primary))"
+              opacity="0.7"
+            />
+          </svg>
+        </div>
+        
+        {/* Wave Layer 3 */}
+        <div className="absolute top-0 left-0 w-[200%] h-full animate-wave-flow" style={{animationDuration: '12s'}}>
+          <svg
+            viewBox="0 0 1200 120"
+            className="w-full h-full"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,20 C100,80 250,20 400,60 C550,100 700,50 850,70 C1000,90 1150,40 1200,50 L1200,0 Z"
+              fill="hsl(var(--primary))"
+              opacity="0.8"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="space-y-4">
