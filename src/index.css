@@ -109,3 +109,37 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* Wave Animation */
+.wave-container {
+  height: 80px; 
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -1px; 
+}
+
+.wave-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200%;
+  height: 100%;
+  
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3e%3cpath class='wave-fill' fill='%236B3E26' d='M0,7.34 C163.87,133.68 322.53,-115.85 500,27.34 C677.47,170.53 836.13,-128.62 1000,7.34 L1000,100 L0,100 Z'%3e%3c/path%3e%3c/svg%3e");
+  
+  background-repeat: repeat-x;
+  background-size: 50% 100%;
+
+  animation: slide-wave 12s linear infinite;
+}
+
+@keyframes slide-wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

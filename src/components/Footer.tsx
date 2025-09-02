@@ -4,23 +4,11 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-primary text-primary-foreground py-16 overflow-hidden">
-      {/* Chocolate Dripping Wave Effect */}
-      <div className="absolute top-0 left-0 w-full h-16 overflow-hidden">
-        <div className="absolute top-0 left-0 w-[200%] h-full animate-wave-slide">
-          <svg
-            viewBox="0 0 1200 120"
-            className="w-full h-full"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0,0 C150,50 300,10 450,40 C600,70 750,20 900,50 C1050,80 1200,30 1350,60 C1500,90 1650,40 1800,50 L1800,0 Z"
-              fill="hsl(25 50% 20%)"
-              opacity="0.6"
-            />
-          </svg>
-        </div>
-      </div>
+    <>
+      {/* Wave Container */}
+      <div className="wave-container"></div>
+      
+      <footer style={{backgroundColor: '#6B3E26'}} className="text-primary-foreground py-16">{/* Chocolate Dripping Wave Effect */}
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -194,6 +182,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
 
