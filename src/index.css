@@ -112,10 +112,13 @@ All colors MUST be HSL.
 
 /* Wave Animation */
 .wave-container-double {
-  height: 90px;
+  /* Altura do container ajustada para acomodar ondas menores */
+  height: 110px; /* Ajustado para 110px */
   width: 100%;
   overflow: hidden;
   position: relative;
+  /* Puxa o container para cima */
+  margin-top: -55px; /* Metade da altura acima para reposicionar */
   margin-bottom: -1px;
 }
 
@@ -135,25 +138,26 @@ All colors MUST be HSL.
   animation-iteration-count: infinite;
 }
 
-/* Onda de trás */
+/* Onda de trás (mais lenta, cor mais clara) */
 .wave-container-double::before {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3e%3cpath class='wave-fill' fill='%238a5a44' d='M0,7.34 C163.87,133.68 322.53,-115.85 500,27.34 C677.47,170.53 836.13,-128.62 1000,7.34 L1000,100 L0,100 Z'%3e%3c/path%3e%3c/svg%3e");
-  animation-duration: 15s;
+  /* NOVO CÓDIGO SVG para a onda de trás, com menor amplitude */
+  /* Lembre-se de ajustar 'fill' para a cor que deseja */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3e%3cpath class='wave-fill' fill='%238a5a44' d='M0,20 C160,80 320,-40 500,20 C680,80 840,-40 1000,20 L1000,100 L0,100 Z'%3e%3c/path%3e%3c/svg%3e");
+  animation-duration: 15s; 
   opacity: 0.7;
 }
 
-/* Onda da frente */
+/* Onda da frente (mais rápida, cor principal) */
 .wave-container-double::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3e%3cpath class='wave-fill' fill='%236B3E26' d='M0,7.34 C163.87,133.68 322.53,-115.85 500,27.34 C677.47,170.53 836.13,-128.62 1000,7.34 L1000,100 L0,100 Z'%3e%3c/path%3e%3c/svg%3e");
+  /* NOVO CÓDIGO SVG para a onda da frente, com menor amplitude */
+  /* Lembre-se de ajustar 'fill' para a cor principal do seu rodapé */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3e%3cpath class='wave-fill' fill='%236B3E26' d='M0,20 C160,80 320,-40 500,20 C680,80 840,-40 1000,20 L1000,100 L0,100 Z'%3e%3c/path%3e%3c/svg%3e");
   animation-duration: 10s;
-  transform: translateY(10px);
+  transform: translateY(10px); /* Ajuste este valor se a onda de trás estiver muito visível ou pouco visível */
 }
 
+/* Animação (a mesma para as duas) */
 @keyframes slide-wave {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
