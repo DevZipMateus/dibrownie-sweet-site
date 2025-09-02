@@ -5,7 +5,9 @@ const WhatsAppButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    console.log('WhatsApp button component mounted');
     const timer = setTimeout(() => {
+      console.log('WhatsApp button becoming visible');
       setIsVisible(true);
     }, 2000);
 
@@ -13,6 +15,8 @@ const WhatsAppButton = () => {
   }, []);
 
   const handleClick = () => {
+    console.log('WhatsApp button clicked!');
+    console.log('Opening WhatsApp URL: https://wa.me/5521985011644');
     window.open('https://wa.me/5521985011644', '_blank', 'noopener,noreferrer');
   };
 
@@ -24,8 +28,10 @@ const WhatsAppButton = () => {
       <div className="relative">
         <button
           onClick={handleClick}
-          className="bg-white text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-warm flex items-center justify-center hover:scale-110 transition-all duration-300 group p-2 sm:p-3"
+          onMouseEnter={() => console.log('Mouse entered WhatsApp button')}
+          className="bg-white text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-warm flex items-center justify-center hover:scale-110 transition-all duration-300 group p-2 sm:p-3 cursor-pointer"
           aria-label="Falar no WhatsApp"
+          style={{ pointerEvents: 'auto' }}
         >
           <img 
             src="/lovable-uploads/f49c33c4-a3c0-4957-9df8-2cb478760990.png" 
@@ -35,10 +41,10 @@ const WhatsAppButton = () => {
         </button>
 
         {/* Pulse Animation */}
-        <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-20"></div>
+        <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-20 pointer-events-none"></div>
         
         {/* Notification Badge */}
-        <div className="absolute -top-1 sm:-top-2 -right-1 sm:-right-2 bg-red-500 text-white text-xs w-5 h-5 sm:w-6 sm:h-6 rounded-full flex items-center justify-center font-bold">
+        <div className="absolute -top-1 sm:-top-2 -right-1 sm:-right-2 bg-red-500 text-white text-xs w-5 h-5 sm:w-6 sm:h-6 rounded-full flex items-center justify-center font-bold pointer-events-none">
           1
         </div>
       </div>
