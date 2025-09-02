@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Clock, Instagram } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contato" className="pt-16 pb-8 md:pt-18 md:pb-10 lg:pt-20 lg:pb-12 bg-gradient-section">
+    <section id="contato" className="pt-16 pb-8 md:pt-18 md:pb-10 lg:pt-20 lg:pb-12">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
