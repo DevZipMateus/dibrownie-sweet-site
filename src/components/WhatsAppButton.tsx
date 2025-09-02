@@ -5,9 +5,7 @@ const WhatsAppButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    console.log('WhatsApp button component mounted');
     const timer = setTimeout(() => {
-      console.log('WhatsApp button becoming visible');
       setIsVisible(true);
     }, 2000);
 
@@ -15,8 +13,6 @@ const WhatsAppButton = () => {
   }, []);
 
   const handleClick = () => {
-    console.log('WhatsApp button clicked!');
-    console.log('Opening WhatsApp URL: https://wa.me/5521985011644');
     window.open('https://wa.me/5521985011644', '_blank', 'noopener,noreferrer');
   };
 
@@ -28,7 +24,6 @@ const WhatsAppButton = () => {
       <div className="relative">
         <button
           onClick={handleClick}
-          onMouseEnter={() => console.log('Mouse entered WhatsApp button')}
           className="bg-white text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-warm flex items-center justify-center hover:scale-110 transition-all duration-300 group p-2 sm:p-3 cursor-pointer"
           aria-label="Falar no WhatsApp"
           style={{ pointerEvents: 'auto' }}
