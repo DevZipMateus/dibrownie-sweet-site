@@ -7,47 +7,16 @@ const Footer = () => {
     <footer className="relative bg-primary text-primary-foreground py-16 overflow-hidden">
       {/* Chocolate Dripping Wave Effect */}
       <div className="absolute top-0 left-0 w-full h-16 overflow-hidden">
-        {/* Wave Layer 1 */}
-        <div className="absolute top-0 left-0 w-[200%] h-full animate-wave-flow">
+        <div className="absolute top-0 left-0 w-[200%] h-full animate-wave-slide">
           <svg
             viewBox="0 0 1200 120"
             className="w-full h-full"
             preserveAspectRatio="none"
           >
             <path
-              d="M0,0 C150,60 300,0 450,40 C600,80 750,20 900,50 C1050,80 1200,30 1200,30 L1200,0 Z"
-              fill="hsl(25 35% 25%)"
-              opacity="0.4"
-            />
-          </svg>
-        </div>
-        
-        {/* Wave Layer 2 */}
-        <div className="absolute top-0 left-0 w-[200%] h-full animate-wave-flow-slow">
-          <svg
-            viewBox="0 0 1200 120"
-            className="w-full h-full"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0,10 C200,70 400,10 600,50 C800,90 1000,40 1200,60 L1200,0 Z"
-              fill="hsl(25 25% 35%)"
+              d="M0,0 C150,50 300,10 450,40 C600,70 750,20 900,50 C1050,80 1200,30 1350,60 C1500,90 1650,40 1800,50 L1800,0 Z"
+              fill="hsl(25 50% 20%)"
               opacity="0.6"
-            />
-          </svg>
-        </div>
-        
-        {/* Wave Layer 3 */}
-        <div className="absolute top-0 left-0 w-[200%] h-full animate-wave-flow" style={{animationDuration: '12s'}}>
-          <svg
-            viewBox="0 0 1200 120"
-            className="w-full h-full"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0,20 C100,80 250,20 400,60 C550,100 700,50 850,70 C1000,90 1150,40 1200,50 L1200,0 Z"
-              fill="hsl(25 35% 25%)"
-              opacity="0.3"
             />
           </svg>
         </div>
