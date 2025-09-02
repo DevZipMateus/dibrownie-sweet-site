@@ -16,8 +16,8 @@ const Footer = () => {
           >
             <path
               d="M0,0 C150,60 300,0 450,40 C600,80 750,20 900,50 C1050,80 1200,30 1200,30 L1200,0 Z"
-              fill="hsl(var(--primary))"
-              opacity="0.9"
+              fill="hsl(var(--secondary))"
+              opacity="0.3"
             />
           </svg>
         </div>
@@ -31,8 +31,8 @@ const Footer = () => {
           >
             <path
               d="M0,10 C200,70 400,10 600,50 C800,90 1000,40 1200,60 L1200,0 Z"
-              fill="hsl(var(--primary))"
-              opacity="0.7"
+              fill="hsl(var(--accent))"
+              opacity="0.4"
             />
           </svg>
         </div>
@@ -46,8 +46,8 @@ const Footer = () => {
           >
             <path
               d="M0,20 C100,80 250,20 400,60 C550,100 700,50 850,70 C1000,90 1150,40 1200,50 L1200,0 Z"
-              fill="hsl(var(--primary))"
-              opacity="0.8"
+              fill="hsl(var(--muted))"
+              opacity="0.6"
             />
           </svg>
         </div>
