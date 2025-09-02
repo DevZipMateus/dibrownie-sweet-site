@@ -2,8 +2,6 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Heart } from 'lucide-react';
-import brownieImage from '@/assets/brownie-varieties.jpg';
-import alfajoresImage from '@/assets/alfajores-premium.jpg';
 
 const Products = () => {
   const brownies = [
@@ -96,8 +94,8 @@ const Products = () => {
               <div className="relative overflow-hidden rounded-2xl shadow-elegant">
                 <div className="aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3]">
                   <img 
-                    src={brownieImage} 
-                    alt="Variedades de Brownies Artesanais Di Brownie"
+                    src="/lovable-uploads/52deec3b-d6cf-4716-8c25-f8e778762e59.png" 
+                    alt="Brownies artesanais empilhados com recheio cremoso Di Brownie"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent"></div>
@@ -114,8 +112,8 @@ const Products = () => {
               <div className="relative overflow-hidden rounded-2xl shadow-elegant">
                 <div className="aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3]">
                   <img 
-                    src={alfajoresImage} 
-                    alt="Alfajores Premium Di Brownie"
+                    src="/lovable-uploads/c418aed8-89f3-45f6-a6b5-845ebc4b60f9.png" 
+                    alt="Brownies artesanais empilhados com cobertura de chocolate Di Brownie"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent"></div>
