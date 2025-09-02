@@ -24,6 +24,24 @@ const Catalog = () => {
     },
     {
       id: 3,
+      name: 'Alfajor Chocolate Branco Mini',
+      description: 'Versão compacta do nosso alfajor de chocolate branco, ideal para qualquer momento',
+      image: '/lovable-uploads/9a7ea4a3-df16-485a-839f-0747052de2f9.png',
+      weight: '45g',
+      category: 'Alfajor',
+      highlight: 'Mini'
+    },
+    {
+      id: 4,
+      name: 'Alfajor Chocolate Preto Mini',
+      description: 'Versão compacta do nosso alfajor de chocolate meio amargo, perfeito para um lanche rápido',
+      image: '/lovable-uploads/01b6226f-a084-450b-81a5-86506c75c359.png',
+      weight: '45g',
+      category: 'Alfajor',
+      highlight: 'Mini'
+    },
+    {
+      id: 5,
       name: 'Brownie Creme de Avelã',
       description: 'Brownie artesanal de chocolate com delicioso recheio de creme de avelã',
       image: '/lovable-uploads/4419def1-b262-4ff4-a6a6-a0b19bbbea3c.png',
@@ -32,7 +50,7 @@ const Catalog = () => {
       highlight: 'Sabor Especial'
     },
     {
-      id: 4,
+      id: 6,
       name: 'Brownie Brigadeiro',
       description: 'Brownie artesanal de chocolate com irresistível recheio de brigadeiro',
       image: '/lovable-uploads/9e7ecc7c-b0f0-4621-b1b4-f83688380d4c.png',
@@ -41,7 +59,7 @@ const Catalog = () => {
       highlight: 'Favorito das Crianças'
     },
     {
-      id: 5,
+      id: 7,
       name: 'Brownie Doce de Leite',
       description: 'Brownie artesanal de chocolate com cremoso recheio de doce de leite',
       image: '/lovable-uploads/9656cd59-9fc8-4e1e-a115-7696ebfbbe9f.png',
@@ -50,7 +68,7 @@ const Catalog = () => {
       highlight: 'Mais Vendido'
     },
     {
-      id: 6,
+      id: 8,
       name: 'Brownie Nozes',
       description: 'Brownie artesanal de chocolate com crocantes pedaços de nozes',
       image: '/lovable-uploads/9d8f3c81-d939-4946-b1e2-cc18f398bdc6.png',
@@ -59,7 +77,7 @@ const Catalog = () => {
       highlight: 'Crocante'
     },
     {
-      id: 7,
+      id: 9,
       name: 'Brownie Tradicional',
       description: 'Nosso clássico brownie artesanal de chocolate, receita original da Di Brownie',
       image: '/lovable-uploads/52dbcc8d-1fb1-4979-bdb4-7cd85052750c.png',
@@ -152,59 +170,6 @@ const Catalog = () => {
               </div>
             </Card>
           ))}
-
-          {/* Empty slots to complete 3x3 grid */}
-          <Card className="border-2 border-dashed border-muted/50 bg-muted/20 flex flex-col items-center justify-center p-6 sm:p-8 min-h-[400px] animate-fade-in" style={{ animationDelay: '0.7s' }}>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <span className="text-2xl">🍫</span>
-              </div>
-              <h3 className="font-heading font-semibold text-lg text-primary mb-2">
-                Novos Sabores
-              </h3>
-              <p className="text-sm text-muted-foreground mb-4">
-                Em breve novidades incríveis para adoçar ainda mais o seu dia!
-              </p>
-              <Button 
-                onClick={() => handleSaberMais('novos sabores')}
-                variant="outline"
-                className="border-secondary text-secondary hover:bg-secondary hover:text-white"
-              >
-                <img 
-                  src="/lovable-uploads/f49c33c4-a3c0-4957-9df8-2cb478760990.png" 
-                  alt="WhatsApp" 
-                  className="w-4 h-4 object-contain mr-2"
-                />
-                Sugerir Sabor
-              </Button>
-            </div>
-          </Card>
-
-          <Card className="border-2 border-dashed border-muted/50 bg-muted/20 flex flex-col items-center justify-center p-6 sm:p-8 min-h-[400px] animate-fade-in" style={{ animationDelay: '0.8s' }}>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <span className="text-2xl">🎁</span>
-              </div>
-              <h3 className="font-heading font-semibold text-lg text-primary mb-2">
-                Kits Especiais
-              </h3>
-              <p className="text-sm text-muted-foreground mb-4">
-                Monte seu kit personalizado com seus sabores favoritos!
-              </p>
-              <Button 
-                onClick={() => handleSaberMais('kit personalizado')}
-                variant="outline"
-                className="border-secondary text-secondary hover:bg-secondary hover:text-white"
-              >
-                <img 
-                  src="/lovable-uploads/f49c33c4-a3c0-4957-9df8-2cb478760990.png" 
-                  alt="WhatsApp" 
-                  className="w-4 h-4 object-contain mr-2"
-                />
-                Montar Kit
-              </Button>
-            </div>
-          </Card>
         </div>
 
         {/* Call to Action */}
