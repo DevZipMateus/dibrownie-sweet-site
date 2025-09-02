@@ -112,10 +112,15 @@ All colors MUST be HSL.
 
 /* Wave Animation */
 .wave-container-double {
-  height: 90px;
+  /* AUMENTAMOS a altura para dar espaço */
+  height: 180px;
   width: 100%;
   overflow: hidden;
   position: relative;
+
+  /* PUXAMOS o container para cima pela metade da sua altura */
+  margin-top: -90px;
+  
   margin-bottom: -1px;
 }
 
