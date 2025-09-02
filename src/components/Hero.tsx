@@ -17,7 +17,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/lovable-uploads/2318ba0f-5125-45ae-9b32-aeabf75deb4e.png" 
+          src="/lovable-uploads/4efac801-94b1-4f21-b448-cd9420749e4e.png" 
           alt="Brownies e Alfajores Artesanais Di Brownie"
           className="w-full h-full object-cover"
         />
