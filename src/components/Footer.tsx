@@ -18,7 +18,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/8c2ab650-6d92-4dd3-819f-8255f85c4677.png" 
                 alt="Di Brownie Logo" 
-                className="h-12 w-auto brightness-0 invert"
+                className="h-12 w-auto filter drop-shadow-lg"
               />
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
@@ -41,6 +41,14 @@ const Footer = () => {
                   className="text-primary-foreground/80 hover:text-secondary transition-colors"
                 >
                   Início
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#catalogo" 
+                  className="text-primary-foreground/80 hover:text-secondary transition-colors"
+                >
+                  Catálogo
                 </a>
               </li>
               <li>
