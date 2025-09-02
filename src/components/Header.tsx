@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <>
       {/* Top Info Bar */}
-      <div className="bg-primary text-primary-foreground py-2 px-4 text-sm hidden md:block">
+      <div className="fixed top-0 w-full z-50 bg-primary text-primary-foreground py-2 px-4 text-sm hidden md:block">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
@@ -52,7 +52,7 @@ const Header = () => {
       </div>
 
       {/* Main Navigation */}
-      <header className={`fixed top-0 md:top-8 w-full z-50 transition-all duration-300 ${
+      <header className={`fixed top-0 md:top-10 w-full z-40 transition-all duration-300 ${
         isScrolled ? 'bg-background/95 backdrop-blur-md shadow-elegant' : 'bg-background/80 backdrop-blur-sm'
       }`}>
         <nav className="container mx-auto px-4 py-4">
