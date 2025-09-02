@@ -1,6 +1,5 @@
 import { Card } from '@/components/ui/card';
 import { Heart, Award, Users, MapPin } from 'lucide-react';
-import aboutImage from '@/assets/about-us-bakery.jpg';
 
 const About = () => {
   return (
@@ -57,8 +56,8 @@ const About = () => {
             <div className="relative overflow-hidden rounded-2xl shadow-elegant">
               <div className="aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3]">
                 <img 
-                  src={aboutImage} 
-                  alt="Interior da Di Brownie - Ambiente acolhedor e moderno"
+                  src="/lovable-uploads/6eae7967-58f6-4293-aa12-7022e168b882.png" 
+                  alt="Variedade de brownies Di Brownie com embalagens coloridas"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
